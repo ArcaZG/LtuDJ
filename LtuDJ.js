@@ -588,18 +588,18 @@
             },
             msToStr: function (msTime) {
                 var ms, msg, timeAway;
-                msg = '';
+                msg = '!roullete';
                 timeAway = {
                     'days': 0,
                     'hours': 0,
-                    'minutes': 0,
+                    'minutes': 10,
                     'seconds': 0
                 };
                 ms = {
-                    'day': 24 * 60 * 60 * 1000,
-                    'hour': 60 * 60 * 1000,
-                    'minute': 60 * 1000,
-                    'second': 1000
+                    'day': 0,
+                    'hour': 0,
+                    'minute': 10,
+                    'second': 0
                 };
                 if (msTime > ms.day) {
                     timeAway.days = Math.floor(msTime / ms.day);
